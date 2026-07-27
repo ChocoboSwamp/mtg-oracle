@@ -39,7 +39,15 @@
   </div>
 </header>
 
-<div class="controls">
+<nav class="viewtabs" id="viewTabs" role="tablist">
+  <div class="viewtabs-inner">
+    <button class="vtab" data-view="synergy" aria-selected="true">Synergy finder</button>
+    <button class="vtab" data-view="overlooked" aria-selected="false">Overlooked pairs</button>
+    <button class="vtab" data-view="meta" aria-selected="false">Meta decks</button>
+  </div>
+</nav>
+
+<div class="controls" id="controls">
   <div class="controls-inner">
     <div class="searchbox">
       <label class="control-label" for="cardSearch">Seed card</label>
@@ -99,6 +107,33 @@
 
   <section class="results" id="results" aria-live="polite"></section>
 
+</main>
+
+<main class="panel" id="overlookedView" hidden>
+  <header class="panel-head">
+    <h2>Overlooked pairs</h2>
+    <p>
+      Card pairs the engine rates as mechanically strong, where at least one card
+      is already proven in the current meta — but which <em>never appear in the
+      same deck</em> across the tracked decklists. Fresh tech, not junk: the
+      quieter card still has to be worth playing.
+    </p>
+    <p class="panel-meta" id="overlookedMeta"></p>
+  </header>
+  <div class="pairlist" id="pairList"></div>
+</main>
+
+<main class="panel" id="metaView" hidden>
+  <header class="panel-head">
+    <h2>Meta decks</h2>
+    <p>
+      Real decklists from the current Standard metagame. Click a deck to see the
+      card-by-card breakdown, with each card's play-rate across the tracked meta.
+    </p>
+    <p class="panel-meta" id="metaMeta"></p>
+  </header>
+  <div class="decklist" id="deckList"></div>
+  <div id="deckDetail"></div>
 </main>
 
 <footer class="colophon">

@@ -18,6 +18,8 @@ import {
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { DATA_DIR, CARDS_FILE } from "./fetch-data.js";
+import { makeResolver, computePlayRate, findOverlooked } from "./meta-lib.js";
+import { tagCard } from "./tags.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
@@ -26,7 +28,15 @@ const DOCS_DIR = join(ROOT, "docs");
 const ANALYSIS_FILE = join(DATA_DIR, "analysis.json");
 
 // Scoring modules that must run identically in Node and the browser.
-const LIB_MODULES = ["synergy.js", "ai-schema.js", "tags.js", "colors.js", "lookup.js", "card-view.js"];
+const LIB_MODULES = [
+  "synergy.js",
+  "ai-schema.js",
+  "tags.js",
+  "colors.js",
+  "lookup.js",
+  "card-view.js",
+  "meta-lib.js",
+];
 
 if (!existsSync(CARDS_FILE)) {
   console.error('Missing data/standard-cards.json — run "npm run fetch" first.');
@@ -76,6 +86,41 @@ const pool = {
 const poolPath = join(DOCS_DIR, "data", "pool.json");
 writeFileSync(poolPath, JSON.stringify(pool));
 
+/* ---- meta layer: decks, card play-rate, overlooked pairs ---- */
+const DECKS_FILE = join(DATA_DIR, "meta-decks.json");
+let metaOut = null;
+if (existsSync(DECKS_FILE)) {
+  const { decks } = JSON.parse(readFileSync(DECKS_FILE, "utf8"));
+  // Rehydrate into the card shape the scorer expects.
+  const hydrated = cards.map((c) => ({
+    ...c,
+    ai: analysis[c.oracle_id] ?? null,
+    ...tagCard(c),
+  }));
+  const resolve = makeResolver(hydrated);
+  const play = computePlayRate(decks, resolve);
+  const overlooked = findOverlooked(hydrated, play, { limit: 60 });
+
+  metaOut = {
+    decks: decks.map((d) => ({
+      name: d.name,
+      source: d.source ?? d.event ?? "",
+      date: d.date,
+      finish: d.finish ?? "",
+      meta_share: d.meta_share ?? null,
+      win_rate: d.win_rate ?? null,
+      sample: d.sample ?? null,
+      main: d.main,
+    })),
+    play_rate: Object.fromEntries(play.rate),
+    deck_count: Object.fromEntries(play.deckCount),
+    coverage: play.totalShare,
+    deck_total: play.deckTotal,
+    overlooked,
+  };
+  writeFileSync(join(DOCS_DIR, "data", "meta.json"), JSON.stringify(metaOut));
+}
+
 for (const file of readdirSync(PUBLIC_DIR)) {
   copyFileSync(join(PUBLIC_DIR, file), join(DOCS_DIR, file));
 }
@@ -89,6 +134,11 @@ writeFileSync(join(DOCS_DIR, ".nojekyll"), "");
 const mb = (b) => (b / 1048576).toFixed(2) + " MB";
 console.log(`docs/data/pool.json  ${mb(Buffer.byteLength(JSON.stringify(pool)))}`);
 console.log(`  ${cards.length} cards, ${analyzed} analyzed (${((100 * analyzed) / cards.length).toFixed(1)}%)`);
+if (metaOut) {
+  console.log(
+    `docs/data/meta.json  ${metaOut.decks.length} decks, ${Object.keys(metaOut.play_rate).length} cards with play-rate, ${metaOut.overlooked.length} overlooked pairs`
+  );
+}
 console.log(`docs/lib/            ${LIB_MODULES.length} modules`);
 console.log(`docs/                ${readdirSync(PUBLIC_DIR).length} static files`);
 console.log("\nPreview with:  npx serve docs");
