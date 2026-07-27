@@ -51,7 +51,18 @@ for (const deck of decks) {
   if (filter && !deck.name.toLowerCase().includes(filter)) continue;
 
   console.log("\n" + "=".repeat(72));
-  console.log(`${deck.name}  —  ${deck.finish}, ${deck.event} (${deck.date})`);
+  const prov = [
+    deck.finish,
+    deck.event,
+    deck.source,
+    deck.meta_share != null ? `${(deck.meta_share * 100).toFixed(1)}% of meta` : null,
+    deck.win_rate != null ? `${(deck.win_rate * 100).toFixed(0)}% WR` : null,
+    deck.sample != null ? `n=${deck.sample}` : null,
+  ].filter(Boolean);
+  console.log(`${deck.name}  —  ${prov.join(" · ")} (${deck.date})`);
+  if (deck.sample != null && deck.sample < 100) {
+    console.log(`  ⚠ small sample (${deck.sample}) — win rate is not statistically meaningful`);
+  }
   console.log("=".repeat(72));
 
   // Resolve maindeck into {card, qty}, reporting anything we can't find.
