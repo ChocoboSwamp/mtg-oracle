@@ -108,6 +108,32 @@ Uses `claude-opus-5` at low effort with strict JSON schema output; the Batch
 API halves the price. Either path writes the same cache keyed by `oracle_id`,
 so after a new set only the new cards need analyzing.
 
+## Meta deck analysis
+
+`data/meta-decks.json` holds real tournament decklists (source + fetch date
+recorded in the file). `node src/analyze-decks.js ["name filter"]` runs them
+through the synergy engine to show what actually makes each deck work: the
+highest-scoring internal card pairs, the "glue" cards by total connection
+score, role composition, curve, and synergy density.
+
+It doubles as a **calibration check on `power`**: if decks winning tournaments
+are full of cards we rated 2, the ratings are wrong. As of the July 2026
+snapshot they are — see "Known limitations" below.
+
+## Known limitations
+
+- **`power` undervalues cost-reduction cards.** Ratings were assigned by
+  reading each card in isolation, so a card printed at `{5}{U}{U}` that
+  routinely costs 1–2 mana gets judged as a seven-drop. The top Standard deck
+  (Izzet Control) is built on exactly these, and we rate its core creatures 2.
+- **Curve analysis uses printed mana value**, so the same decks look like clunky
+  ramp piles when they are tempo decks.
+- **`power` is also biased against recent cards** — 2023–24 cards are rated 4-5
+  about twice as often as 2025–26 cards, reflecting how much the analyzing model
+  had seen about them rather than real strength.
+
+Treat `power` as a weak prior, not a verdict. Real play-rate data is the fix.
+
 ## Deploying
 
 The site is static — GitHub Pages serves `docs/` directly. The scoring engine
