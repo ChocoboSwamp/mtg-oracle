@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Synergy Oracle · Standard</title>
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="brand">
+      <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
+        <g transform="rotate(-14 25 32)">
+          <rect x="13.5" y="15.5" width="23" height="33" rx="3"
+                fill="none" stroke="var(--muted)" stroke-width="2.5"/>
+        </g>
+        <g transform="rotate(14 39 32)">
+          <rect x="27.5" y="15.5" width="23" height="33" rx="3"
+                fill="none" stroke="var(--accent)" stroke-width="2.5"/>
+        </g>
+        <path d="M32 22.5 Q33.2 30.8 41.5 32 Q33.2 33.2 32 41.5 Q30.8 33.2 22.5 32 Q30.8 30.8 32 22.5 Z"
+              fill="var(--accent)"/>
+      </svg>
+      <div class="brand-text">
+        <h1>Synergy&nbsp;Oracle</h1>
+        <p class="brand-sub">Overlooked pairings in the Standard card pool</p>
+      </div>
+    </div>
+    <div class="masthead-side">
+      <span class="pool-count" id="poolCount">— cards</span>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">◐</button>
+    </div>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="controls-inner">
+    <div class="searchbox">
+      <label class="control-label" for="cardSearch">Seed card</label>
+      <input id="cardSearch" type="text" autocomplete="off" spellcheck="false"
+             placeholder="Start typing a card name…">
+      <ul class="suggestions" id="suggestions" hidden></ul>
+    </div>
+
+    <div class="filter">
+      <span class="control-label">Deck colors</span>
+      <div class="pips" id="colorPips" role="group" aria-label="Color identity filter">
+        <button class="pip pip-w" data-color="W" aria-pressed="false" title="White">W</button>
+        <button class="pip pip-u" data-color="U" aria-pressed="false" title="Blue">U</button>
+        <button class="pip pip-b" data-color="B" aria-pressed="false" title="Black">B</button>
+        <button class="pip pip-r" data-color="R" aria-pressed="false" title="Red">R</button>
+        <button class="pip pip-g" data-color="G" aria-pressed="false" title="Green">G</button>
+      </div>
+      <span class="filter-hint" id="filterHint">any colors</span>
+    </div>
+  </div>
+</div>
+
+<main class="layout">
+
+  <aside class="seed-panel" id="seedPanel">
+    <div class="empty-state" id="emptyState">
+      <p class="empty-glyph">✦</p>
+      <h2>Pick a seed card</h2>
+      <p>The Oracle reads every card's rules text and matches what one card
+         <em>produces</em> with what another <em>wants</em> — surfacing pairings
+         that decklists overlook.</p>
+      <p class="try-label">Try one:</p>
+      <div class="try-buttons" id="tryButtons"></div>
+    </div>
+    <article class="seed-card" id="seedCard" hidden>
+      <div class="seed-art">
+        <img id="seedArt" alt="" draggable="false">
+        <button id="flipBtn" class="flip-btn" hidden>⟳ Flip</button>
+      </div>
+      <header class="seed-head">
+        <h2 class="seed-name" id="seedName"></h2>
+        <span class="mana" id="seedCost"></span>
+      </header>
+      <p class="seed-type" id="seedType"></p>
+      <details class="oracle-details">
+        <summary>Oracle text</summary>
+        <div class="oracle" id="seedOracle"></div>
+      </details>
+      <div class="tagset">
+        <h3>Provides</h3>
+        <div class="chips chips-out" id="seedProvides"></div>
+        <h3>Wants</h3>
+        <div class="chips chips-in" id="seedWants"></div>
+      </div>
+    </article>
+  </aside>
+
+  <section class="results" id="results" aria-live="polite"></section>
+
+</main>
+
+<footer class="colophon">
+  <p>Card data from <a href="https://scryfall.com" target="_blank" rel="noopener">Scryfall</a>.
+     Unofficial fan project — not affiliated with Wizards&nbsp;of&nbsp;the&nbsp;Coast.</p>
+</footer>
+
+<img class="hover-preview" id="hoverPreview" alt="" hidden>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

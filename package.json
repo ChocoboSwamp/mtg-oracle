@@ -1,0 +1,20 @@
+{
+  "name": "mtg-synergy",
+  "version": "0.1.0",
+  "description": "Find overlooked Magic: The Gathering card synergies by analyzing oracle text from Scryfall bulk data",
+  "type": "module",
+  "main": "src/cli.js",
+  "scripts": {
+    "fetch": "node src/cli.js fetch",
+    "web": "node src/server.js",
+    "build": "node src/build-static.js",
+    "analyze": "node src/analyze.js",
+    "start": "node src/cli.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.115.0"
+  }
+}

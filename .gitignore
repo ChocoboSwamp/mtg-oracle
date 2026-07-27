@@ -1,0 +1,11 @@
+node_modules/
+
+# Regenerable via `npm run fetch` (23 MB — do not commit)
+data/standard-cards.json
+
+# Intermediate artifacts of the analysis pipeline
+data/chunks/
+data/parts/
+data/batch-state.json
+
+# data/analysis.json IS committed: it is the expensive artifact and the build input.
