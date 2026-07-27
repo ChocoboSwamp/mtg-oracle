@@ -8,4 +8,9 @@ data/chunks/
 data/parts/
 data/batch-state.json
 
+# Captured third-party meta data — keep local, never publish.
+# Aggregated stats from Untapped etc. are those sites' product; the repo is public.
+data/imports/*
+!data/imports/README.md
+
 # data/analysis.json IS committed: it is the expensive artifact and the build input.
