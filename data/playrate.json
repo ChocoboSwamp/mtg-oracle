@@ -1,0 +1,1504 @@
+{
+ "source": "untapped.gg",
+ "captured": "2026-07-27",
+ "window": {
+  "from": "2026-06-23",
+  "to": "2026-07-27",
+  "days": 35
+ },
+ "total_matches": 1351462,
+ "archetypes": [
+  {
+   "id": "304",
+   "name": null,
+   "colors": "W",
+   "color_label": "Mono White",
+   "matches": 239380,
+   "popularity_latest": 17.606,
+   "popularity_avg": 17.766588235294115,
+   "win_rate_latest": 56.85,
+   "win_rate_avg": 57.25911764705884,
+   "tag_ids": [
+    284,
+    48
+   ]
+  },
+  {
+   "id": "1316",
+   "name": null,
+   "colors": "UBRG",
+   "color_label": "4C (no W)",
+   "matches": 98360,
+   "popularity_latest": 6.685,
+   "popularity_avg": 7.278147058823531,
+   "win_rate_latest": 55.67,
+   "win_rate_avg": 57.46352941176471,
+   "tag_ids": [
+    313,
+    66
+   ]
+  },
+  {
+   "id": "3096",
+   "name": null,
+   "colors": "B",
+   "color_label": "Mono Black",
+   "matches": 79736,
+   "popularity_latest": 5.558,
+   "popularity_avg": 5.858911764705882,
+   "win_rate_latest": 51.78,
+   "win_rate_avg": 52.88882352941176,
+   "tag_ids": [
+    287,
+    1536
+   ]
+  },
+  {
+   "id": "5400",
+   "name": null,
+   "colors": "WUR",
+   "color_label": "Jeskai",
+   "matches": 69251,
+   "popularity_latest": 5.2,
+   "popularity_avg": 5.095176470588234,
+   "win_rate_latest": 52.79,
+   "win_rate_avg": 53.49441176470589,
+   "tag_ids": [
+    294,
+    3117
+   ]
+  },
+  {
+   "id": "661",
+   "name": null,
+   "colors": "WUBR",
+   "color_label": "4C (no G)",
+   "matches": 62805,
+   "popularity_latest": 4.303,
+   "popularity_avg": 4.628411764705881,
+   "win_rate_latest": 53.97,
+   "win_rate_avg": 53.94411764705882,
+   "tag_ids": [
+    298,
+    17
+   ]
+  },
+  {
+   "id": "2398",
+   "name": null,
+   "colors": "WUR",
+   "color_label": "Jeskai",
+   "matches": 50972,
+   "popularity_latest": 4.071,
+   "popularity_avg": 3.803235294117647,
+   "win_rate_latest": 56.04,
+   "win_rate_avg": 56.67088235294119,
+   "tag_ids": [
+    294,
+    63
+   ]
+  },
+  {
+   "id": "215",
+   "name": null,
+   "colors": "W",
+   "color_label": "Mono White",
+   "matches": 48884,
+   "popularity_latest": 3.277,
+   "popularity_avg": 3.6067647058823535,
+   "win_rate_latest": 54.48,
+   "win_rate_avg": 55.72764705882353,
+   "tag_ids": [
+    284,
+    120
+   ]
+  },
+  {
+   "id": "1397",
+   "name": null,
+   "colors": "G",
+   "color_label": "Mono Green",
+   "matches": 42854,
+   "popularity_latest": 3.469,
+   "popularity_avg": 3.174588235294117,
+   "win_rate_latest": 54.36,
+   "win_rate_avg": 54.697647058823506,
+   "tag_ids": [
+    299,
+    177
+   ]
+  },
+  {
+   "id": "5162",
+   "name": null,
+   "colors": "WG",
+   "color_label": "Selesnya",
+   "matches": 41403,
+   "popularity_latest": 4.654,
+   "popularity_avg": 3.0796176470588232,
+   "win_rate_latest": 56.9,
+   "win_rate_avg": 56.639117647058825,
+   "tag_ids": [
+    300,
+    3008
+   ]
+  },
+  {
+   "id": "196",
+   "name": null,
+   "colors": "UR",
+   "color_label": "Izzet",
+   "matches": 31801,
+   "popularity_latest": 2.545,
+   "popularity_avg": 2.3520588235294118,
+   "win_rate_latest": 56.09,
+   "win_rate_avg": 54.71588235294118,
+   "tag_ids": [
+    293,
+    130
+   ]
+  },
+  {
+   "id": "4777",
+   "name": null,
+   "colors": "BR",
+   "color_label": "Rakdos",
+   "matches": 30812,
+   "popularity_latest": 2.457,
+   "popularity_avg": 2.2456764705882346,
+   "win_rate_latest": 54.02,
+   "win_rate_avg": 54.262941176470584,
+   "tag_ids": [
+    295,
+    2727
+   ]
+  },
+  {
+   "id": "178",
+   "name": null,
+   "colors": "G",
+   "color_label": "Mono Green",
+   "matches": 28292,
+   "popularity_latest": 2.077,
+   "popularity_avg": 2.0945882352941174,
+   "win_rate_latest": 54.57,
+   "win_rate_avg": 55.820882352941176,
+   "tag_ids": [
+    299,
+    37
+   ]
+  },
+  {
+   "id": "242",
+   "name": null,
+   "colors": "WUR",
+   "color_label": "Jeskai",
+   "matches": 28138,
+   "popularity_latest": 1.539,
+   "popularity_avg": 2.052323529411765,
+   "win_rate_latest": 50.54,
+   "win_rate_avg": 52.31676470588235,
+   "tag_ids": [
+    294,
+    17
+   ]
+  },
+  {
+   "id": "5393",
+   "name": null,
+   "colors": "U",
+   "color_label": "Mono Blue",
+   "matches": 25040,
+   "popularity_latest": 1.637,
+   "popularity_avg": 1.8499705882352944,
+   "win_rate_latest": 54.11,
+   "win_rate_avg": 53.53235294117648,
+   "tag_ids": [
+    285,
+    10
+   ]
+  },
+  {
+   "id": "5299",
+   "name": null,
+   "colors": "UR",
+   "color_label": "Izzet",
+   "matches": 24443,
+   "popularity_latest": 1.291,
+   "popularity_avg": 1.7937352941176472,
+   "win_rate_latest": 53.25,
+   "win_rate_avg": 50.83176470588234,
+   "tag_ids": [
+    293,
+    3117
+   ]
+  },
+  {
+   "id": "5430",
+   "name": null,
+   "colors": "UBR",
+   "color_label": "Grixis",
+   "matches": 21804,
+   "popularity_latest": 2.184,
+   "popularity_avg": 1.6444999999999996,
+   "win_rate_latest": 56.29,
+   "win_rate_avg": 55.561470588235295,
+   "tag_ids": [
+    297,
+    2727
+   ]
+  },
+  {
+   "id": "210",
+   "name": null,
+   "colors": "WG",
+   "color_label": "Selesnya",
+   "matches": 21767,
+   "popularity_latest": 1.113,
+   "popularity_avg": 1.585970588235294,
+   "win_rate_latest": 54.71,
+   "win_rate_avg": 56.382647058823515,
+   "tag_ids": [
+    300,
+    39
+   ]
+  },
+  {
+   "id": "5147",
+   "name": null,
+   "colors": "WB",
+   "color_label": "Orzhov",
+   "matches": 19736,
+   "popularity_latest": 1.181,
+   "popularity_avg": 1.4618823529411769,
+   "win_rate_latest": 53.83,
+   "win_rate_avg": 55.116470588235295,
+   "tag_ids": [
+    288,
+    559
+   ]
+  },
+  {
+   "id": "4085",
+   "name": null,
+   "colors": "WBRG",
+   "color_label": "4C (no U)",
+   "matches": 18450,
+   "popularity_latest": 2.925,
+   "popularity_avg": 1.4021176470588237,
+   "win_rate_latest": 57.68,
+   "win_rate_avg": 55.26764705882352,
+   "tag_ids": [
+    312,
+    12
+   ]
+  },
+  {
+   "id": "5203",
+   "name": null,
+   "colors": "UR",
+   "color_label": "Izzet",
+   "matches": 16743,
+   "popularity_latest": 1.022,
+   "popularity_avg": 1.2197941176470586,
+   "win_rate_latest": 52.7,
+   "win_rate_avg": 52.93058823529412,
+   "tag_ids": [
+    293,
+    3041
+   ]
+  },
+  {
+   "id": "5284",
+   "name": null,
+   "colors": "URG",
+   "color_label": "Temur",
+   "matches": 14875,
+   "popularity_latest": 1.172,
+   "popularity_avg": 1.1081176470588237,
+   "win_rate_latest": 55.93,
+   "win_rate_avg": 56.941764705882356,
+   "tag_ids": [
+    309,
+    2835
+   ]
+  },
+  {
+   "id": "886",
+   "name": null,
+   "colors": "WUBRG",
+   "color_label": "5C",
+   "matches": 14092,
+   "popularity_latest": 0.835,
+   "popularity_avg": 1.0455294117647058,
+   "win_rate_latest": 55.22,
+   "win_rate_avg": 52.1964705882353,
+   "tag_ids": [
+    314,
+    17
+   ]
+  },
+  {
+   "id": "5180",
+   "name": null,
+   "colors": "UB",
+   "color_label": "Dimir",
+   "matches": 13038,
+   "popularity_latest": 0.804,
+   "popularity_avg": 0.9574117647058823,
+   "win_rate_latest": 51.58,
+   "win_rate_avg": 52.16999999999999,
+   "tag_ids": [
+    289,
+    3039
+   ]
+  },
+  {
+   "id": "5691",
+   "name": null,
+   "colors": "WUBRG",
+   "color_label": "5C",
+   "matches": 11757,
+   "popularity_latest": 1.189,
+   "popularity_avg": 0.8897941176470588,
+   "win_rate_latest": 51.21,
+   "win_rate_avg": 48.585882352941184,
+   "tag_ids": [
+    314,
+    3393
+   ]
+  },
+  {
+   "id": "5142",
+   "name": null,
+   "colors": "UG",
+   "color_label": "Simic",
+   "matches": 11613,
+   "popularity_latest": 0.772,
+   "popularity_avg": 0.8758823529411766,
+   "win_rate_latest": 57.71,
+   "win_rate_avg": 54.84235294117647,
+   "tag_ids": [
+    301,
+    3008
+   ]
+  },
+  {
+   "id": "176",
+   "name": null,
+   "colors": "WU",
+   "color_label": "Azorius",
+   "matches": 11315,
+   "popularity_latest": 0.908,
+   "popularity_avg": 0.833764705882353,
+   "win_rate_latest": 54.43,
+   "win_rate_avg": 53.843823529411765,
+   "tag_ids": [
+    286,
+    17
+   ]
+  },
+  {
+   "id": "5680",
+   "name": null,
+   "colors": "G",
+   "color_label": "Mono Green",
+   "matches": 11639,
+   "popularity_latest": 0.778,
+   "popularity_avg": 0.8311764705882353,
+   "win_rate_latest": 55.6,
+   "win_rate_avg": 56.007941176470595,
+   "tag_ids": [
+    299,
+    3391
+   ]
+  },
+  {
+   "id": "569",
+   "name": null,
+   "colors": "BG",
+   "color_label": "Golgari",
+   "matches": 10848,
+   "popularity_latest": 0.953,
+   "popularity_avg": 0.8174705882352941,
+   "win_rate_latest": 49.88,
+   "win_rate_avg": 50.19323529411764,
+   "tag_ids": [
+    303,
+    17
+   ]
+  },
+  {
+   "id": "5816",
+   "name": null,
+   "colors": "W",
+   "color_label": "Mono White",
+   "matches": 11289,
+   "popularity_latest": 0.748,
+   "popularity_avg": 0.802529411764706,
+   "win_rate_latest": 54.87,
+   "win_rate_avg": 52.01941176470589,
+   "tag_ids": [
+    284,
+    3494
+   ]
+  },
+  {
+   "id": "567",
+   "name": null,
+   "colors": "WU",
+   "color_label": "Azorius",
+   "matches": 10324,
+   "popularity_latest": 0.911,
+   "popularity_avg": 0.771029411764706,
+   "win_rate_latest": 51.09,
+   "win_rate_avg": 51.1685294117647,
+   "tag_ids": [
+    286,
+    48
+   ]
+  },
+  {
+   "id": "193",
+   "name": null,
+   "colors": "R",
+   "color_label": "Mono Red",
+   "matches": 9557,
+   "popularity_latest": 0.932,
+   "popularity_avg": 0.7101764705882352,
+   "win_rate_latest": 53.49,
+   "win_rate_avg": 51.487352941176475,
+   "tag_ids": [
+    291,
+    65
+   ]
+  },
+  {
+   "id": "5394",
+   "name": null,
+   "colors": "WBG",
+   "color_label": "Abzan",
+   "matches": 9481,
+   "popularity_latest": 0.657,
+   "popularity_avg": 0.6968235294117648,
+   "win_rate_latest": 51.6,
+   "win_rate_avg": 52.85588235294117,
+   "tag_ids": [
+    304,
+    2268
+   ]
+  },
+  {
+   "id": "288",
+   "name": null,
+   "colors": "UBG",
+   "color_label": "Sultai",
+   "matches": 9413,
+   "popularity_latest": 0.616,
+   "popularity_avg": 0.693264705882353,
+   "win_rate_latest": 52.15,
+   "win_rate_avg": 49.64676470588237,
+   "tag_ids": [
+    305,
+    17
+   ]
+  },
+  {
+   "id": "711",
+   "name": null,
+   "colors": "WR",
+   "color_label": "Boros",
+   "matches": 9338,
+   "popularity_latest": 0.576,
+   "popularity_avg": 0.6924117647058821,
+   "win_rate_latest": 56.13,
+   "win_rate_avg": 54.36235294117648,
+   "tag_ids": [
+    292,
+    111
+   ]
+  },
+  {
+   "id": "1024",
+   "name": null,
+   "colors": "WG",
+   "color_label": "Selesnya",
+   "matches": 9354,
+   "popularity_latest": 0.403,
+   "popularity_avg": 0.6666470588235295,
+   "win_rate_latest": 46.03,
+   "win_rate_avg": 48.642352941176476,
+   "tag_ids": [
+    300,
+    120
+   ]
+  },
+  {
+   "id": "1082",
+   "name": null,
+   "colors": "WBR",
+   "color_label": "Mardu",
+   "matches": 8617,
+   "popularity_latest": 0.456,
+   "popularity_avg": 0.6437352941176471,
+   "win_rate_latest": 57.14,
+   "win_rate_avg": 54.66764705882355,
+   "tag_ids": [
+    296,
+    110
+   ]
+  },
+  {
+   "id": "510",
+   "name": null,
+   "colors": "R",
+   "color_label": "Mono Red",
+   "matches": 8590,
+   "popularity_latest": 0.743,
+   "popularity_avg": 0.6397352941176471,
+   "win_rate_latest": 55.42,
+   "win_rate_avg": 53.117352941176485,
+   "tag_ids": [
+    291,
+    27
+   ]
+  },
+  {
+   "id": "5678",
+   "name": null,
+   "colors": "RG",
+   "color_label": "Gruul",
+   "matches": 8664,
+   "popularity_latest": 0.293,
+   "popularity_avg": 0.6352941176470586,
+   "win_rate_latest": 49.62,
+   "win_rate_avg": 52.94764705882352,
+   "tag_ids": [
+    307,
+    3391
+   ]
+  },
+  {
+   "id": "5386",
+   "name": null,
+   "colors": "WU",
+   "color_label": "Azorius",
+   "matches": 7577,
+   "popularity_latest": 0.405,
+   "popularity_avg": 0.5539999999999999,
+   "win_rate_latest": 52.32,
+   "win_rate_avg": 52.19588235294117,
+   "tag_ids": [
+    286,
+    3178
+   ]
+  },
+  {
+   "id": "3601",
+   "name": null,
+   "colors": "R",
+   "color_label": "Mono Red",
+   "matches": 6017,
+   "popularity_latest": 0.557,
+   "popularity_avg": 0.4707058823529413,
+   "win_rate_latest": 43.96,
+   "win_rate_avg": 41.33764705882352,
+   "tag_ids": [
+    291,
+    234
+   ]
+  },
+  {
+   "id": "352",
+   "name": null,
+   "colors": "WB",
+   "color_label": "Orzhov",
+   "matches": 6207,
+   "popularity_latest": 0.515,
+   "popularity_avg": 0.4634411764705882,
+   "win_rate_latest": 54.6,
+   "win_rate_avg": 52.902058823529416,
+   "tag_ids": [
+    288,
+    3
+   ]
+  },
+  {
+   "id": "4027",
+   "name": null,
+   "colors": "WG",
+   "color_label": "Selesnya",
+   "matches": 5986,
+   "popularity_latest": 0.318,
+   "popularity_avg": 0.44305882352941184,
+   "win_rate_latest": 50.69,
+   "win_rate_avg": 53.80058823529412,
+   "tag_ids": [
+    300,
+    2269
+   ]
+  },
+  {
+   "id": "4857",
+   "name": null,
+   "colors": "WUBRG",
+   "color_label": "5C",
+   "matches": 5872,
+   "popularity_latest": 0.3,
+   "popularity_avg": 0.42744117647058816,
+   "win_rate_latest": 45.59,
+   "win_rate_avg": 45.946176470588235,
+   "tag_ids": [
+    314,
+    2804
+   ]
+  },
+  {
+   "id": "5209",
+   "name": null,
+   "colors": "UBG",
+   "color_label": "Sultai",
+   "matches": 5615,
+   "popularity_latest": 0.46,
+   "popularity_avg": 0.4165882352941176,
+   "win_rate_latest": 55.16,
+   "win_rate_avg": 53.621176470588246,
+   "tag_ids": [
+    305,
+    39
+   ]
+  },
+  {
+   "id": "4224",
+   "name": null,
+   "colors": "BG",
+   "color_label": "Golgari",
+   "matches": 5290,
+   "popularity_latest": 0.383,
+   "popularity_avg": 0.4008529411764705,
+   "win_rate_latest": 54.47,
+   "win_rate_avg": 50.861176470588234,
+   "tag_ids": [
+    303,
+    1536
+   ]
+  },
+  {
+   "id": "860",
+   "name": null,
+   "colors": "WG",
+   "color_label": "Selesnya",
+   "matches": 5334,
+   "popularity_latest": 0.408,
+   "popularity_avg": 0.39529411764705874,
+   "win_rate_latest": 55.41,
+   "win_rate_avg": 52.18029411764706,
+   "tag_ids": [
+    300,
+    177
+   ]
+  },
+  {
+   "id": "4883",
+   "name": null,
+   "colors": "U",
+   "color_label": "Mono Blue",
+   "matches": 4960,
+   "popularity_latest": 0.812,
+   "popularity_avg": 0.3847941176470588,
+   "win_rate_latest": 56.39,
+   "win_rate_avg": 51.06411764705883,
+   "tag_ids": [
+    285,
+    130
+   ]
+  },
+  {
+   "id": "3104",
+   "name": null,
+   "colors": "BG",
+   "color_label": "Golgari",
+   "matches": 5098,
+   "popularity_latest": 0.267,
+   "popularity_avg": 0.3759705882352941,
+   "win_rate_latest": 44.21,
+   "win_rate_avg": 47.587647058823535,
+   "tag_ids": [
+    303,
+    1736
+   ]
+  },
+  {
+   "id": "901",
+   "name": null,
+   "colors": "WBG",
+   "color_label": "Abzan",
+   "matches": 4871,
+   "popularity_latest": 0.361,
+   "popularity_avg": 0.3435882352941176,
+   "win_rate_latest": 55.66,
+   "win_rate_avg": 54.40941176470588,
+   "tag_ids": [
+    304,
+    120
+   ]
+  },
+  {
+   "id": "5300",
+   "name": null,
+   "colors": "RG",
+   "color_label": "Gruul",
+   "matches": 4602,
+   "popularity_latest": 0.228,
+   "popularity_avg": 0.3407058823529412,
+   "win_rate_latest": 59.42,
+   "win_rate_avg": 55.388529411764694,
+   "tag_ids": [
+    307,
+    3008
+   ]
+  },
+  {
+   "id": "2874",
+   "name": null,
+   "colors": "UBG",
+   "color_label": "Sultai",
+   "matches": 4146,
+   "popularity_latest": 0.229,
+   "popularity_avg": 0.30608823529411755,
+   "win_rate_latest": 53.85,
+   "win_rate_avg": 54.78235294117648,
+   "tag_ids": [
+    305,
+    66
+   ]
+  },
+  {
+   "id": "5040",
+   "name": null,
+   "colors": "WUBRG",
+   "color_label": "5C",
+   "matches": 3894,
+   "popularity_latest": 0.312,
+   "popularity_avg": 0.28823529411764703,
+   "win_rate_latest": 50.88,
+   "win_rate_avg": 46.17588235294119,
+   "tag_ids": [
+    314,
+    2951
+   ]
+  },
+  {
+   "id": "1105",
+   "name": null,
+   "colors": "WBG",
+   "color_label": "Abzan",
+   "matches": 3763,
+   "popularity_latest": 0.348,
+   "popularity_avg": 0.28741176470588226,
+   "win_rate_latest": 42.22,
+   "win_rate_avg": 47.9314705882353,
+   "tag_ids": [
+    304,
+    19
+   ]
+  },
+  {
+   "id": "4116",
+   "name": null,
+   "colors": "RG",
+   "color_label": "Gruul",
+   "matches": 3470,
+   "popularity_latest": 0.248,
+   "popularity_avg": 0.2536764705882353,
+   "win_rate_latest": 51.11,
+   "win_rate_avg": 53.92000000000001,
+   "tag_ids": [
+    307,
+    1136
+   ]
+  },
+  {
+   "id": "5421",
+   "name": null,
+   "colors": "BR",
+   "color_label": "Rakdos",
+   "matches": 3194,
+   "popularity_latest": 0.364,
+   "popularity_avg": 0.2359705882352941,
+   "win_rate_latest": 50,
+   "win_rate_avg": 41.56941176470589,
+   "tag_ids": [
+    295,
+    3190
+   ]
+  },
+  {
+   "id": "4732",
+   "name": null,
+   "colors": "WRG",
+   "color_label": "Naya",
+   "matches": 3019,
+   "popularity_latest": 0.185,
+   "popularity_avg": 0.22832352941176462,
+   "win_rate_latest": 48.81,
+   "win_rate_avg": 49.01999999999999,
+   "tag_ids": [
+    308,
+    2691
+   ]
+  },
+  {
+   "id": "970",
+   "name": null,
+   "colors": "W",
+   "color_label": "Mono White",
+   "matches": 2907,
+   "popularity_latest": 0.479,
+   "popularity_avg": 0.22347058823529414,
+   "win_rate_latest": 50.92,
+   "win_rate_avg": 54.84647058823529,
+   "tag_ids": [
+    284,
+    64
+   ]
+  },
+  {
+   "id": "1135",
+   "name": null,
+   "colors": "WG",
+   "color_label": "Selesnya",
+   "matches": 2947,
+   "popularity_latest": 0.252,
+   "popularity_avg": 0.22026470588235292,
+   "win_rate_latest": 52.19,
+   "win_rate_avg": 56.65470588235294,
+   "tag_ids": [
+    300,
+    27
+   ]
+  },
+  {
+   "id": "5815",
+   "name": null,
+   "colors": "BRG",
+   "color_label": "Jund",
+   "matches": 2727,
+   "popularity_latest": 0.153,
+   "popularity_avg": 0.20249999999999999,
+   "win_rate_latest": 46.04,
+   "win_rate_avg": 43.72205882352941,
+   "tag_ids": [
+    311,
+    3392
+   ]
+  },
+  {
+   "id": "4401",
+   "name": null,
+   "colors": "BR",
+   "color_label": "Rakdos",
+   "matches": 2726,
+   "popularity_latest": 0.111,
+   "popularity_avg": 0.20229411764705885,
+   "win_rate_latest": 59.41,
+   "win_rate_avg": 53.41029411764706,
+   "tag_ids": [
+    295,
+    404
+   ]
+  },
+  {
+   "id": "5685",
+   "name": null,
+   "colors": "WRG",
+   "color_label": "Naya",
+   "matches": 2819,
+   "popularity_latest": 0.114,
+   "popularity_avg": 0.20091176470588237,
+   "win_rate_latest": 45.63,
+   "win_rate_avg": 44.38058823529413,
+   "tag_ids": [
+    308,
+    3392
+   ]
+  },
+  {
+   "id": "5405",
+   "name": null,
+   "colors": "URG",
+   "color_label": "Temur",
+   "matches": 2586,
+   "popularity_latest": 0.136,
+   "popularity_avg": 0.1927941176470588,
+   "win_rate_latest": 41.46,
+   "win_rate_avg": 48.220588235294116,
+   "tag_ids": [
+    309,
+    3183
+   ]
+  },
+  {
+   "id": "4083",
+   "name": null,
+   "colors": "WUB",
+   "color_label": "Esper",
+   "matches": 2580,
+   "popularity_latest": 0.264,
+   "popularity_avg": 0.19220588235294117,
+   "win_rate_latest": 48.95,
+   "win_rate_avg": 49.424411764705894,
+   "tag_ids": [
+    290,
+    51
+   ]
+  },
+  {
+   "id": "899",
+   "name": null,
+   "colors": "RG",
+   "color_label": "Gruul",
+   "matches": 2535,
+   "popularity_latest": 0.293,
+   "popularity_avg": 0.1918823529411765,
+   "win_rate_latest": 53.38,
+   "win_rate_avg": 54.02029411764706,
+   "tag_ids": [
+    307,
+    177
+   ]
+  },
+  {
+   "id": "5048",
+   "name": null,
+   "colors": "WURG",
+   "color_label": "4C (no B)",
+   "matches": 2462,
+   "popularity_latest": 0.393,
+   "popularity_avg": 0.19041176470588234,
+   "win_rate_latest": 57.02,
+   "win_rate_avg": 56.77882352941176,
+   "tag_ids": [
+    310,
+    2948
+   ]
+  },
+  {
+   "id": "4477",
+   "name": null,
+   "colors": "WUB",
+   "color_label": "Esper",
+   "matches": 2485,
+   "popularity_latest": 0.18,
+   "popularity_avg": 0.18844117647058822,
+   "win_rate_latest": 50.92,
+   "win_rate_avg": 51.430588235294124,
+   "tag_ids": [
+    290,
+    2529
+   ]
+  },
+  {
+   "id": "5681",
+   "name": null,
+   "colors": "UBR",
+   "color_label": "Grixis",
+   "matches": 2258,
+   "popularity_latest": 0.087,
+   "popularity_avg": 0.18511764705882333,
+   "win_rate_latest": 36.65,
+   "win_rate_avg": 36.85558823529412,
+   "tag_ids": [
+    297,
+    3395
+   ]
+  },
+  {
+   "id": "5813",
+   "name": null,
+   "colors": "WR",
+   "color_label": "Boros",
+   "matches": 2551,
+   "popularity_latest": 0.083,
+   "popularity_avg": 0.1781176470588235,
+   "win_rate_latest": 52,
+   "win_rate_avg": 49.88676470588234,
+   "tag_ids": [
+    292,
+    3494
+   ]
+  },
+  {
+   "id": "1133",
+   "name": null,
+   "colors": "WR",
+   "color_label": "Boros",
+   "matches": 2330,
+   "popularity_latest": 0.114,
+   "popularity_avg": 0.17661764705882355,
+   "win_rate_latest": 53.4,
+   "win_rate_avg": 52.89382352941177,
+   "tag_ids": [
+    292,
+    65
+   ]
+  },
+  {
+   "id": "2474",
+   "name": null,
+   "colors": "UB",
+   "color_label": "Dimir",
+   "matches": 2369,
+   "popularity_latest": 0.103,
+   "popularity_avg": 0.17555882352941166,
+   "win_rate_latest": 45.93,
+   "win_rate_avg": 46.1814705882353,
+   "tag_ids": [
+    289,
+    66
+   ]
+  },
+  {
+   "id": "192",
+   "name": null,
+   "colors": "U",
+   "color_label": "Mono Blue",
+   "matches": 2244,
+   "popularity_latest": 0.146,
+   "popularity_avg": 0.16744117647058823,
+   "win_rate_latest": 44.7,
+   "win_rate_avg": 52.58029411764705,
+   "tag_ids": [
+    285,
+    50
+   ]
+  },
+  {
+   "id": "1357",
+   "name": null,
+   "colors": "UG",
+   "color_label": "Simic",
+   "matches": 2050,
+   "popularity_latest": 0.202,
+   "popularity_avg": 0.15388235294117644,
+   "win_rate_latest": 28.42,
+   "win_rate_avg": 32.790294117647065,
+   "tag_ids": [
+    301,
+    177
+   ]
+  },
+  {
+   "id": "5677",
+   "name": null,
+   "colors": "WBR",
+   "color_label": "Mardu",
+   "matches": 1851,
+   "popularity_latest": 0.099,
+   "popularity_avg": 0.14452941176470602,
+   "win_rate_latest": 50.23,
+   "win_rate_avg": 49.902941176470605,
+   "tag_ids": [
+    296,
+    3394
+   ]
+  },
+  {
+   "id": "559",
+   "name": null,
+   "colors": "UG",
+   "color_label": "Simic",
+   "matches": 1956,
+   "popularity_latest": 0.1,
+   "popularity_avg": 0.142,
+   "win_rate_latest": 49.45,
+   "win_rate_avg": 47.21323529411765,
+   "tag_ids": [
+    301,
+    51
+   ]
+  },
+  {
+   "id": "1235",
+   "name": null,
+   "colors": "UR",
+   "color_label": "Izzet",
+   "matches": 1802,
+   "popularity_latest": 0.049,
+   "popularity_avg": 0.13741176470588237,
+   "win_rate_latest": 47.73,
+   "win_rate_avg": 47.657647058823535,
+   "tag_ids": [
+    293,
+    94
+   ]
+  },
+  {
+   "id": "1158",
+   "name": null,
+   "colors": "",
+   "color_label": "Colorless",
+   "matches": 1863,
+   "popularity_latest": 0.099,
+   "popularity_avg": 0.13608823529411762,
+   "win_rate_latest": 14.44,
+   "win_rate_avg": 24.41588235294117,
+   "tag_ids": [
+    283,
+    6
+   ]
+  },
+  {
+   "id": "5320",
+   "name": null,
+   "colors": "WUBG",
+   "color_label": "4C (no R)",
+   "matches": 1476,
+   "popularity_latest": 0.056,
+   "popularity_avg": 0.13151851851851856,
+   "win_rate_latest": 47.06,
+   "win_rate_avg": 38.39296296296297,
+   "tag_ids": [
+    306,
+    2488
+   ]
+  },
+  {
+   "id": "570",
+   "name": null,
+   "colors": "U",
+   "color_label": "Mono Blue",
+   "matches": 1755,
+   "popularity_latest": 0.119,
+   "popularity_avg": 0.12426470588235293,
+   "win_rate_latest": 58.33,
+   "win_rate_avg": 45.69382352941177,
+   "tag_ids": [
+    285,
+    17
+   ]
+  },
+  {
+   "id": "5436",
+   "name": null,
+   "colors": "WBRG",
+   "color_label": "4C (no U)",
+   "matches": 1273,
+   "popularity_latest": 0.116,
+   "popularity_avg": 0.09497058823529414,
+   "win_rate_latest": 55.24,
+   "win_rate_avg": 49.584117647058825,
+   "tag_ids": [
+    312,
+    17
+   ]
+  },
+  {
+   "id": "1173",
+   "name": null,
+   "colors": "WRG",
+   "color_label": "Naya",
+   "matches": 1144,
+   "popularity_latest": 0.116,
+   "popularity_avg": 0.0855,
+   "win_rate_latest": 56.19,
+   "win_rate_avg": 55.52911764705884,
+   "tag_ids": [
+    308,
+    39
+   ]
+  },
+  {
+   "id": "3488",
+   "name": null,
+   "colors": "WBRG",
+   "color_label": "4C (no U)",
+   "matches": 1109,
+   "popularity_latest": 0.06,
+   "popularity_avg": 0.08388235294117652,
+   "win_rate_latest": 47.7,
+   "win_rate_avg": 47.28264705882356,
+   "tag_ids": [
+    312,
+    1407
+   ]
+  },
+  {
+   "id": "613",
+   "name": null,
+   "colors": "BRG",
+   "color_label": "Jund",
+   "matches": 1060,
+   "popularity_latest": 0.048,
+   "popularity_avg": 0.08005882352941181,
+   "win_rate_latest": 46.81,
+   "win_rate_avg": 46.41147058823526,
+   "tag_ids": [
+    311,
+    17
+   ]
+  },
+  {
+   "id": "5397",
+   "name": null,
+   "colors": "URG",
+   "color_label": "Temur",
+   "matches": 1043,
+   "popularity_latest": 0.072,
+   "popularity_avg": 0.07755882352941179,
+   "win_rate_latest": 46.93,
+   "win_rate_avg": 45.709117647058825,
+   "tag_ids": [
+    309,
+    3117
+   ]
+  },
+  {
+   "id": "5161",
+   "name": null,
+   "colors": "URG",
+   "color_label": "Temur",
+   "matches": 1021,
+   "popularity_latest": 0.082,
+   "popularity_avg": 0.07541176470588234,
+   "win_rate_latest": 51.91,
+   "win_rate_avg": 52.06647058823532,
+   "tag_ids": [
+    309,
+    3008
+   ]
+  },
+  {
+   "id": "5818",
+   "name": null,
+   "colors": "WRG",
+   "color_label": "Naya",
+   "matches": 951,
+   "popularity_latest": 0.043,
+   "popularity_avg": 0.07529411764705884,
+   "win_rate_latest": 50.22,
+   "win_rate_avg": 50.58176470588237,
+   "tag_ids": [
+    308,
+    3393
+   ]
+  },
+  {
+   "id": "5389",
+   "name": null,
+   "colors": "WUG",
+   "color_label": "Bant",
+   "matches": 993,
+   "popularity_latest": 0.074,
+   "popularity_avg": 0.07358823529411763,
+   "win_rate_latest": 51.62,
+   "win_rate_avg": 51.879411764705836,
+   "tag_ids": [
+    302,
+    3008
+   ]
+  },
+  {
+   "id": "5502",
+   "name": null,
+   "colors": "WURG",
+   "color_label": "4C (no B)",
+   "matches": 808,
+   "popularity_latest": 0.07,
+   "popularity_avg": 0.07000000000000005,
+   "win_rate_latest": 57.27,
+   "win_rate_avg": 57.26999999999999,
+   "tag_ids": [
+    310,
+    2557
+   ]
+  },
+  {
+   "id": "5683",
+   "name": null,
+   "colors": "WRG",
+   "color_label": "Naya",
+   "matches": 875,
+   "popularity_latest": 0.035,
+   "popularity_avg": 0.06991176470588235,
+   "win_rate_latest": 50.78,
+   "win_rate_avg": 50.839705882352916,
+   "tag_ids": [
+    308,
+    3391
+   ]
+  },
+  {
+   "id": "5538",
+   "name": null,
+   "colors": "WRG",
+   "color_label": "Naya",
+   "matches": 856,
+   "popularity_latest": 0.055,
+   "popularity_avg": 0.06364705882352939,
+   "win_rate_latest": 56.76,
+   "win_rate_avg": 55.88911764705882,
+   "tag_ids": [
+    308,
+    3008
+   ]
+  },
+  {
+   "id": "3615",
+   "name": null,
+   "colors": "U",
+   "color_label": "Mono Blue",
+   "matches": 769,
+   "popularity_latest": 0.062,
+   "popularity_avg": 0.05685294117647062,
+   "win_rate_latest": 42.62,
+   "win_rate_avg": 41.82941176470586,
+   "tag_ids": [
+    285,
+    76
+   ]
+  },
+  {
+   "id": "4676",
+   "name": null,
+   "colors": "WUB",
+   "color_label": "Esper",
+   "matches": 724,
+   "popularity_latest": 0.052,
+   "popularity_avg": 0.05385294117647062,
+   "win_rate_latest": 50.18,
+   "win_rate_avg": 48.598823529411774,
+   "tag_ids": [
+    290,
+    1146
+   ]
+  },
+  {
+   "id": "5684",
+   "name": null,
+   "colors": "RG",
+   "color_label": "Gruul",
+   "matches": 704,
+   "popularity_latest": 0.042,
+   "popularity_avg": 0.05291176470588238,
+   "win_rate_latest": 52.42,
+   "win_rate_avg": 51.592352941176486,
+   "tag_ids": [
+    307,
+    3393
+   ]
+  },
+  {
+   "id": "184",
+   "name": null,
+   "colors": "WUB",
+   "color_label": "Esper",
+   "matches": 708,
+   "popularity_latest": 0.049,
+   "popularity_avg": 0.05291176470588233,
+   "win_rate_latest": 47.16,
+   "win_rate_avg": 47.6294117647059,
+   "tag_ids": [
+    290,
+    17
+   ]
+  },
+  {
+   "id": "188",
+   "name": null,
+   "colors": "U",
+   "color_label": "Mono Blue",
+   "matches": 672,
+   "popularity_latest": 0.036,
+   "popularity_avg": 0.05061764705882355,
+   "win_rate_latest": 45.24,
+   "win_rate_avg": 45.674411764705894,
+   "tag_ids": [
+    285,
+    51
+   ]
+  },
+  {
+   "id": "5812",
+   "name": null,
+   "colors": "WUB",
+   "color_label": "Esper",
+   "matches": 577,
+   "popularity_latest": 0.04,
+   "popularity_avg": 0.04288235294117649,
+   "win_rate_latest": 51.15,
+   "win_rate_avg": 50.69705882352944,
+   "tag_ids": [
+    290,
+    3116
+   ]
+  },
+  {
+   "id": "5041",
+   "name": null,
+   "colors": "WUBG",
+   "color_label": "4C (no R)",
+   "matches": 501,
+   "popularity_latest": 0.032,
+   "popularity_avg": 0.037147058823529436,
+   "win_rate_latest": 52.71,
+   "win_rate_avg": 53.249411764705904,
+   "tag_ids": [
+    306,
+    2948
+   ]
+  },
+  {
+   "id": "646",
+   "name": null,
+   "colors": "WUB",
+   "color_label": "Esper",
+   "matches": 0,
+   "popularity_avg": null,
+   "win_rate_avg": null,
+   "tag_ids": [
+    290,
+    66
+   ]
+  },
+  {
+   "id": "4891",
+   "name": null,
+   "colors": "WURG",
+   "color_label": "4C (no B)",
+   "matches": 0,
+   "popularity_avg": null,
+   "win_rate_avg": null,
+   "tag_ids": [
+    310,
+    2691
+   ]
+  },
+  {
+   "id": "5814",
+   "name": null,
+   "colors": "WUG",
+   "color_label": "Bant",
+   "matches": 0,
+   "popularity_avg": null,
+   "win_rate_avg": null,
+   "tag_ids": [
+    302,
+    2277
+   ]
+  },
+  {
+   "id": "5817",
+   "name": null,
+   "colors": "WURG",
+   "color_label": "4C (no B)",
+   "matches": 0,
+   "popularity_avg": null,
+   "win_rate_avg": null,
+   "tag_ids": [
+    310,
+    2277
+   ]
+  }
+ ]
+}
