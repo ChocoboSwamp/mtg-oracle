@@ -108,6 +108,30 @@ Uses `claude-opus-5` at low effort with strict JSON schema output; the Batch
 API halves the price. Either path writes the same cache keyed by `oracle_id`,
 so after a new set only the new cards need analyzing.
 
+## Importing decklists
+
+`npm run import -- <file> --name "..."` adds a decklist to `data/meta-decks.json`
+from any common text format — **MTG Arena export** (`4 Card Name (SET) 123`),
+MTGO/plain (`4 Card Name`), or bare names. Section headers (`Deck`, `Sideboard`,
+`Companion`) are understood, set codes and collector numbers stripped, and names
+canonicalized to Scryfall's spelling.
+
+Every card is checked against the local Standard pool and **the import refuses to
+write if anything is unresolved**, so a typo or a non-Standard card can't silently
+become a missing slot.
+
+```
+npm run import -- paste.txt --name "Mono White Auras" --source untapped \
+                 --share 0.081 --winrate 0.55 --sample 4200 --dry
+```
+
+`--dry` parses and verifies without writing. Optional `--share`, `--winrate`,
+`--sample`, `--player`, `--event`, `--finish`, `--date` are recorded alongside
+the list so provenance travels with the data.
+
+This is source-agnostic on purpose: whatever site or client the list comes from,
+copying it out and pasting it here is one step.
+
 ## Meta deck analysis
 
 `data/meta-decks.json` holds real tournament decklists (source + fetch date

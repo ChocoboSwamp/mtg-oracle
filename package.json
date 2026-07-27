@@ -9,6 +9,8 @@
     "web": "node src/server.js",
     "build": "node src/build-static.js",
     "analyze": "node src/analyze.js",
+    "import": "node src/import-deck.js",
+    "decks": "node src/analyze-decks.js",
     "start": "node src/cli.js"
   },
   "engines": {
