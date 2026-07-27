@@ -10,7 +10,7 @@
  "archetypes": [
   {
    "id": "304",
-   "name": null,
+   "name": "Mono-White Auras",
    "colors": "W",
    "color_label": "Mono White",
    "matches": 239380,
@@ -25,7 +25,7 @@
   },
   {
    "id": "1316",
-   "name": null,
+   "name": "4-Color Reanimator",
    "colors": "UBRG",
    "color_label": "4C (no W)",
    "matches": 98360,
@@ -40,7 +40,7 @@
   },
   {
    "id": "3096",
-   "name": null,
+   "name": "Mono-Black Demons",
    "colors": "B",
    "color_label": "Mono Black",
    "matches": 79736,
@@ -55,7 +55,7 @@
   },
   {
    "id": "5400",
-   "name": null,
+   "name": "Jeskai Lessons",
    "colors": "WUR",
    "color_label": "Jeskai",
    "matches": 69251,
@@ -70,7 +70,7 @@
   },
   {
    "id": "661",
-   "name": null,
+   "name": "4-Color Control",
    "colors": "WUBR",
    "color_label": "4C (no G)",
    "matches": 62805,
@@ -85,7 +85,7 @@
   },
   {
    "id": "2398",
-   "name": null,
+   "name": "Jeskai Artifacts",
    "colors": "WUR",
    "color_label": "Jeskai",
    "matches": 50972,
@@ -100,7 +100,7 @@
   },
   {
    "id": "215",
-   "name": null,
+   "name": "Mono-White Lifegain",
    "colors": "W",
    "color_label": "Mono White",
    "matches": 48884,
@@ -115,7 +115,7 @@
   },
   {
    "id": "1397",
-   "name": null,
+   "name": "Mono-Green Landfall",
    "colors": "G",
    "color_label": "Mono Green",
    "matches": 42854,
@@ -130,7 +130,7 @@
   },
   {
    "id": "5162",
-   "name": null,
+   "name": "Selesnya Ouroboroid",
    "colors": "WG",
    "color_label": "Selesnya",
    "matches": 41403,
@@ -145,7 +145,7 @@
   },
   {
    "id": "196",
-   "name": null,
+   "name": "Izzet Prowess",
    "colors": "UR",
    "color_label": "Izzet",
    "matches": 31801,
@@ -160,7 +160,7 @@
   },
   {
    "id": "4777",
-   "name": null,
+   "name": "Rakdos Fling",
    "colors": "BR",
    "color_label": "Rakdos",
    "matches": 30812,
@@ -175,7 +175,7 @@
   },
   {
    "id": "178",
-   "name": null,
+   "name": "Mono-Green Stompy",
    "colors": "G",
    "color_label": "Mono Green",
    "matches": 28292,
@@ -190,7 +190,7 @@
   },
   {
    "id": "242",
-   "name": null,
+   "name": "Jeskai Control",
    "colors": "WUR",
    "color_label": "Jeskai",
    "matches": 28138,
@@ -205,7 +205,7 @@
   },
   {
    "id": "5393",
-   "name": null,
+   "name": "Mono-Blue Elementals",
    "colors": "U",
    "color_label": "Mono Blue",
    "matches": 25040,
@@ -220,7 +220,7 @@
   },
   {
    "id": "5299",
-   "name": null,
+   "name": "Izzet Lessons",
    "colors": "UR",
    "color_label": "Izzet",
    "matches": 24443,
@@ -235,7 +235,7 @@
   },
   {
    "id": "5430",
-   "name": null,
+   "name": "Grixis Fling",
    "colors": "UBR",
    "color_label": "Grixis",
    "matches": 21804,
@@ -250,7 +250,7 @@
   },
   {
    "id": "210",
-   "name": null,
+   "name": "Selesnya Counters",
    "colors": "WG",
    "color_label": "Selesnya",
    "matches": 21767,
@@ -265,7 +265,7 @@
   },
   {
    "id": "5147",
-   "name": null,
+   "name": "Orzhov Skeletons",
    "colors": "WB",
    "color_label": "Orzhov",
    "matches": 19736,
@@ -280,7 +280,7 @@
   },
   {
    "id": "4085",
-   "name": null,
+   "name": "4-Color Dinosaurs",
    "colors": "WBRG",
    "color_label": "4C (no U)",
    "matches": 18450,
@@ -295,7 +295,7 @@
   },
   {
    "id": "5203",
-   "name": null,
+   "name": "Izzet Spellementals",
    "colors": "UR",
    "color_label": "Izzet",
    "matches": 16743,
@@ -310,7 +310,7 @@
   },
   {
    "id": "5284",
-   "name": null,
+   "name": "Temur Kona",
    "colors": "URG",
    "color_label": "Temur",
    "matches": 14875,
@@ -325,7 +325,7 @@
   },
   {
    "id": "886",
-   "name": null,
+   "name": "5-Color World War Hulk",
    "colors": "WUBRG",
    "color_label": "5C",
    "matches": 14092,
@@ -340,7 +340,7 @@
   },
   {
    "id": "5180",
-   "name": null,
+   "name": "Dimir Excruciator",
    "colors": "UB",
    "color_label": "Dimir",
    "matches": 13038,
@@ -355,7 +355,7 @@
   },
   {
    "id": "5691",
-   "name": null,
+   "name": "5-Color Control",
    "colors": "WUBRG",
    "color_label": "5C",
    "matches": 11757,
@@ -370,7 +370,7 @@
   },
   {
    "id": "5142",
-   "name": null,
+   "name": "Simic Ouroboroid",
    "colors": "UG",
    "color_label": "Simic",
    "matches": 11613,
@@ -385,7 +385,7 @@
   },
   {
    "id": "176",
-   "name": null,
+   "name": "Azorius Control",
    "colors": "WU",
    "color_label": "Azorius",
    "matches": 11315,
@@ -400,7 +400,7 @@
   },
   {
    "id": "5680",
-   "name": null,
+   "name": "Mono-Green Squirrel Girl",
    "colors": "G",
    "color_label": "Mono Green",
    "matches": 11639,
@@ -415,7 +415,7 @@
   },
   {
    "id": "569",
-   "name": null,
+   "name": "Golgari Control",
    "colors": "BG",
    "color_label": "Golgari",
    "matches": 10848,
@@ -430,7 +430,7 @@
   },
   {
    "id": "5816",
-   "name": null,
+   "name": "Mono-White Heros",
    "colors": "W",
    "color_label": "Mono White",
    "matches": 11289,
@@ -445,7 +445,7 @@
   },
   {
    "id": "567",
-   "name": null,
+   "name": "Azorius Auras",
    "colors": "WU",
    "color_label": "Azorius",
    "matches": 10324,
@@ -460,7 +460,7 @@
   },
   {
    "id": "193",
-   "name": null,
+   "name": "Mono-Red Aggro",
    "colors": "R",
    "color_label": "Mono Red",
    "matches": 9557,
@@ -475,7 +475,7 @@
   },
   {
    "id": "5394",
-   "name": null,
+   "name": "Abzan Bats",
    "colors": "WBG",
    "color_label": "Abzan",
    "matches": 9481,
@@ -490,7 +490,7 @@
   },
   {
    "id": "288",
-   "name": null,
+   "name": "Sultai Control",
    "colors": "UBG",
    "color_label": "Sultai",
    "matches": 9413,
@@ -505,7 +505,7 @@
   },
   {
    "id": "711",
-   "name": null,
+   "name": "Boros Tokens",
    "colors": "WR",
    "color_label": "Boros",
    "matches": 9338,
@@ -520,7 +520,7 @@
   },
   {
    "id": "1024",
-   "name": null,
+   "name": "Selesnya Lifegain",
    "colors": "WG",
    "color_label": "Selesnya",
    "matches": 9354,
@@ -535,7 +535,7 @@
   },
   {
    "id": "1082",
-   "name": null,
+   "name": "Mardu Monument",
    "colors": "WBR",
    "color_label": "Mardu",
    "matches": 8617,
@@ -550,7 +550,7 @@
   },
   {
    "id": "510",
-   "name": null,
+   "name": "Mono-Red Land Destruction",
    "colors": "R",
    "color_label": "Mono Red",
    "matches": 8590,
@@ -565,7 +565,7 @@
   },
   {
    "id": "5678",
-   "name": null,
+   "name": "Gruul Ouroboroid",
    "colors": "RG",
    "color_label": "Gruul",
    "matches": 8664,
@@ -580,7 +580,7 @@
   },
   {
    "id": "5386",
-   "name": null,
+   "name": "Azorius Tempo",
    "colors": "WU",
    "color_label": "Azorius",
    "matches": 7577,
@@ -595,7 +595,7 @@
   },
   {
    "id": "3601",
-   "name": null,
+   "name": "Mono-Red Burn",
    "colors": "R",
    "color_label": "Mono Red",
    "matches": 6017,
@@ -610,7 +610,7 @@
   },
   {
    "id": "352",
-   "name": null,
+   "name": "Orzhov Lifegain",
    "colors": "WB",
    "color_label": "Orzhov",
    "matches": 6207,
@@ -625,7 +625,7 @@
   },
   {
    "id": "4027",
-   "name": null,
+   "name": "Selesnya Landfall",
    "colors": "WG",
    "color_label": "Selesnya",
    "matches": 5986,
@@ -640,7 +640,7 @@
   },
   {
    "id": "4857",
-   "name": null,
+   "name": "5-Color Allies",
    "colors": "WUBRG",
    "color_label": "5C",
    "matches": 5872,
@@ -655,7 +655,7 @@
   },
   {
    "id": "5209",
-   "name": null,
+   "name": "Sultai Counters",
    "colors": "UBG",
    "color_label": "Sultai",
    "matches": 5615,
@@ -670,7 +670,7 @@
   },
   {
    "id": "4224",
-   "name": null,
+   "name": "Golgari Demons",
    "colors": "BG",
    "color_label": "Golgari",
    "matches": 5290,
@@ -685,7 +685,7 @@
   },
   {
    "id": "860",
-   "name": null,
+   "name": "Selesnya Rabbits",
    "colors": "WG",
    "color_label": "Selesnya",
    "matches": 5334,
@@ -700,7 +700,7 @@
   },
   {
    "id": "4883",
-   "name": null,
+   "name": "Mono-Blue Prowess",
    "colors": "U",
    "color_label": "Mono Blue",
    "matches": 4960,
@@ -715,7 +715,7 @@
   },
   {
    "id": "3104",
-   "name": null,
+   "name": "Golgari Toxic",
    "colors": "BG",
    "color_label": "Golgari",
    "matches": 5098,
@@ -730,7 +730,7 @@
   },
   {
    "id": "901",
-   "name": null,
+   "name": "Abzan Superfriends",
    "colors": "WBG",
    "color_label": "Abzan",
    "matches": 4871,
@@ -745,7 +745,7 @@
   },
   {
    "id": "5300",
-   "name": null,
+   "name": "Gruul Delirium",
    "colors": "RG",
    "color_label": "Gruul",
    "matches": 4602,
@@ -760,7 +760,7 @@
   },
   {
    "id": "2874",
-   "name": null,
+   "name": "Sultai Reanimator",
    "colors": "UBG",
    "color_label": "Sultai",
    "matches": 4146,
@@ -775,7 +775,7 @@
   },
   {
    "id": "5040",
-   "name": null,
+   "name": "5-Color Spider",
    "colors": "WUBRG",
    "color_label": "5C",
    "matches": 3894,
@@ -790,7 +790,7 @@
   },
   {
    "id": "1105",
-   "name": null,
+   "name": "Abzan Lifegain",
    "colors": "WBG",
    "color_label": "Abzan",
    "matches": 3763,
@@ -805,7 +805,7 @@
   },
   {
    "id": "4116",
-   "name": null,
+   "name": "Gruul Landfall",
    "colors": "RG",
    "color_label": "Gruul",
    "matches": 3470,
@@ -820,7 +820,7 @@
   },
   {
    "id": "5421",
-   "name": null,
+   "name": "Rakdos Monument",
    "colors": "BR",
    "color_label": "Rakdos",
    "matches": 3194,
@@ -835,7 +835,7 @@
   },
   {
    "id": "4732",
-   "name": null,
+   "name": "Naya Counters",
    "colors": "WRG",
    "color_label": "Naya",
    "matches": 3019,
@@ -850,7 +850,7 @@
   },
   {
    "id": "970",
-   "name": null,
+   "name": "Mono-White Tokens",
    "colors": "W",
    "color_label": "Mono White",
    "matches": 2907,
@@ -865,7 +865,7 @@
   },
   {
    "id": "1135",
-   "name": null,
+   "name": "Selesnya Aggro",
    "colors": "WG",
    "color_label": "Selesnya",
    "matches": 2947,
@@ -880,7 +880,7 @@
   },
   {
    "id": "5815",
-   "name": null,
+   "name": "Jund Alien Invasion",
    "colors": "BRG",
    "color_label": "Jund",
    "matches": 2727,
@@ -895,7 +895,7 @@
   },
   {
    "id": "4401",
-   "name": null,
+   "name": "Rakdos Goblins",
    "colors": "BR",
    "color_label": "Rakdos",
    "matches": 2726,
@@ -910,7 +910,7 @@
   },
   {
    "id": "5685",
-   "name": null,
+   "name": "Naya Alien Invasion",
    "colors": "WRG",
    "color_label": "Naya",
    "matches": 2819,
@@ -925,7 +925,7 @@
   },
   {
    "id": "5405",
-   "name": null,
+   "name": "Temur Mathemagics",
    "colors": "URG",
    "color_label": "Temur",
    "matches": 2586,
@@ -940,7 +940,7 @@
   },
   {
    "id": "4083",
-   "name": null,
+   "name": "Esper Mill",
    "colors": "WUB",
    "color_label": "Esper",
    "matches": 2580,
@@ -955,7 +955,7 @@
   },
   {
    "id": "899",
-   "name": null,
+   "name": "Gruul Squirrel Girl",
    "colors": "RG",
    "color_label": "Gruul",
    "matches": 2535,
@@ -970,7 +970,7 @@
   },
   {
    "id": "5048",
-   "name": null,
+   "name": "4-Color Legends",
    "colors": "WURG",
    "color_label": "4C (no B)",
    "matches": 2462,
@@ -985,7 +985,7 @@
   },
   {
    "id": "4477",
-   "name": null,
+   "name": "Esper Pixie",
    "colors": "WUB",
    "color_label": "Esper",
    "matches": 2485,
@@ -1000,7 +1000,7 @@
   },
   {
    "id": "5681",
-   "name": null,
+   "name": "Grixis Prowess",
    "colors": "UBR",
    "color_label": "Grixis",
    "matches": 2258,
@@ -1015,7 +1015,7 @@
   },
   {
    "id": "5813",
-   "name": null,
+   "name": "Boros Heros",
    "colors": "WR",
    "color_label": "Boros",
    "matches": 2551,
@@ -1030,7 +1030,7 @@
   },
   {
    "id": "1133",
-   "name": null,
+   "name": "Boros Burn",
    "colors": "WR",
    "color_label": "Boros",
    "matches": 2330,
@@ -1045,7 +1045,7 @@
   },
   {
    "id": "2474",
-   "name": null,
+   "name": "Dimir Control",
    "colors": "UB",
    "color_label": "Dimir",
    "matches": 2369,
@@ -1060,7 +1060,7 @@
   },
   {
    "id": "192",
-   "name": null,
+   "name": "Mono-Blue Mill",
    "colors": "U",
    "color_label": "Mono Blue",
    "matches": 2244,
@@ -1075,7 +1075,7 @@
   },
   {
    "id": "1357",
-   "name": null,
+   "name": "Simic Counters",
    "colors": "UG",
    "color_label": "Simic",
    "matches": 2050,
@@ -1090,7 +1090,7 @@
   },
   {
    "id": "5677",
-   "name": null,
+   "name": "Mardu Discard",
    "colors": "WBR",
    "color_label": "Mardu",
    "matches": 1851,
@@ -1105,7 +1105,7 @@
   },
   {
    "id": "559",
-   "name": null,
+   "name": "Simic Landfall",
    "colors": "UG",
    "color_label": "Simic",
    "matches": 1956,
@@ -1120,7 +1120,7 @@
   },
   {
    "id": "1235",
-   "name": null,
+   "name": "Izzet Storm",
    "colors": "UR",
    "color_label": "Izzet",
    "matches": 1802,
@@ -1150,7 +1150,7 @@
   },
   {
    "id": "5320",
-   "name": null,
+   "name": "4-Color Control",
    "colors": "WUBG",
    "color_label": "4C (no R)",
    "matches": 1476,
@@ -1165,7 +1165,7 @@
   },
   {
    "id": "570",
-   "name": null,
+   "name": "Mono-Blue Control",
    "colors": "U",
    "color_label": "Mono Blue",
    "matches": 1755,
@@ -1180,7 +1180,7 @@
   },
   {
    "id": "5436",
-   "name": null,
+   "name": "4-Color Ketramose",
    "colors": "WBRG",
    "color_label": "4C (no U)",
    "matches": 1273,
@@ -1195,7 +1195,7 @@
   },
   {
    "id": "1173",
-   "name": null,
+   "name": "Naya Random Encounter",
    "colors": "WRG",
    "color_label": "Naya",
    "matches": 1144,
@@ -1210,7 +1210,7 @@
   },
   {
    "id": "3488",
-   "name": null,
+   "name": "4-Color Reanimator",
    "colors": "WBRG",
    "color_label": "4C (no U)",
    "matches": 1109,
@@ -1225,7 +1225,7 @@
   },
   {
    "id": "613",
-   "name": null,
+   "name": "Jund Control",
    "colors": "BRG",
    "color_label": "Jund",
    "matches": 1060,
@@ -1240,7 +1240,7 @@
   },
   {
    "id": "5397",
-   "name": null,
+   "name": "Temur Lessons",
    "colors": "URG",
    "color_label": "Temur",
    "matches": 1043,
@@ -1255,7 +1255,7 @@
   },
   {
    "id": "5161",
-   "name": null,
+   "name": "Temur Battlecrier",
    "colors": "URG",
    "color_label": "Temur",
    "matches": 1021,
@@ -1270,7 +1270,7 @@
   },
   {
    "id": "5818",
-   "name": null,
+   "name": "Naya World War Hulk",
    "colors": "WRG",
    "color_label": "Naya",
    "matches": 951,
@@ -1285,7 +1285,7 @@
   },
   {
    "id": "5389",
-   "name": null,
+   "name": "Bant Rhythm",
    "colors": "WUG",
    "color_label": "Bant",
    "matches": 993,
@@ -1300,7 +1300,7 @@
   },
   {
    "id": "5502",
-   "name": null,
+   "name": "4-Color Allies",
    "colors": "WURG",
    "color_label": "4C (no B)",
    "matches": 808,
@@ -1315,7 +1315,7 @@
   },
   {
    "id": "5683",
-   "name": null,
+   "name": "Naya Yuna",
    "colors": "WRG",
    "color_label": "Naya",
    "matches": 875,
@@ -1330,7 +1330,7 @@
   },
   {
    "id": "5538",
-   "name": null,
+   "name": "Naya Squirrel Girl",
    "colors": "WRG",
    "color_label": "Naya",
    "matches": 856,
@@ -1345,7 +1345,7 @@
   },
   {
    "id": "3615",
-   "name": null,
+   "name": "Mono-Blue Tempo",
    "colors": "U",
    "color_label": "Mono Blue",
    "matches": 769,
@@ -1360,7 +1360,7 @@
   },
   {
    "id": "4676",
-   "name": null,
+   "name": "Esper Oculus",
    "colors": "WUB",
    "color_label": "Esper",
    "matches": 724,
@@ -1375,7 +1375,7 @@
   },
   {
    "id": "5684",
-   "name": null,
+   "name": "Gruul World War Hulk",
    "colors": "RG",
    "color_label": "Gruul",
    "matches": 704,
@@ -1390,7 +1390,7 @@
   },
   {
    "id": "184",
-   "name": null,
+   "name": "Esper Control",
    "colors": "WUB",
    "color_label": "Esper",
    "matches": 708,
@@ -1405,7 +1405,7 @@
   },
   {
    "id": "188",
-   "name": null,
+   "name": "Mono-Blue Lessons",
    "colors": "U",
    "color_label": "Mono Blue",
    "matches": 672,
@@ -1420,7 +1420,7 @@
   },
   {
    "id": "5812",
-   "name": null,
+   "name": "Esper Ninjas",
    "colors": "WUB",
    "color_label": "Esper",
    "matches": 577,
@@ -1435,7 +1435,7 @@
   },
   {
    "id": "5041",
-   "name": null,
+   "name": "4-Color Burn",
    "colors": "WUBG",
    "color_label": "4C (no R)",
    "matches": 501,
@@ -1450,7 +1450,7 @@
   },
   {
    "id": "646",
-   "name": null,
+   "name": "Esper Moonshadow",
    "colors": "WUB",
    "color_label": "Esper",
    "matches": 0,
@@ -1463,7 +1463,7 @@
   },
   {
    "id": "4891",
-   "name": null,
+   "name": "4-Color Control",
    "colors": "WURG",
    "color_label": "4C (no B)",
    "matches": 0,
@@ -1476,7 +1476,7 @@
   },
   {
    "id": "5814",
-   "name": null,
+   "name": "Bant Airbending",
    "colors": "WUG",
    "color_label": "Bant",
    "matches": 0,
@@ -1489,7 +1489,7 @@
   },
   {
    "id": "5817",
-   "name": null,
+   "name": "4-Color Allies",
    "colors": "WURG",
    "color_label": "4C (no B)",
    "matches": 0,

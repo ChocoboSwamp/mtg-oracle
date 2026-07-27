@@ -1,11 +1,11 @@
-#!/usr/bin/env node
+﻿#!/usr/bin/env node
 /**
  * Parse an Untapped.gg meta capture into a clean play-rate table.
  *   node src/parse-untapped.js data/imports/untapped-meta.json [--names names.txt] [--top 25]
  *
  * The capture holds, per archetype id: daily popularity %, daily win rate,
- * total matches, and a colour bitmask. It does NOT carry archetype names —
- * those live in a separate lookup — so pass --names with the rendered page
+ * total matches, and a colour bitmask. It does NOT carry archetype names â€”
+ * those live in a separate lookup â€” so pass --names with the rendered page
  * text (or a "id=name" list) to label them.
  *
  * Writes data/playrate.json: the playability prior the `power` rating was
@@ -60,7 +60,7 @@ function colorsFrom(byte) {
 
 /**
  * Optional archetype names. Accepts either an explicit "123=Name" mapping,
- * or raw page text copied from the site — in which case names are matched to
+ * or raw page text copied from the site â€” in which case names are matched to
  * ids by their popularity percentage, which is unique enough to join on.
  */
 const names = {};
@@ -79,53 +79,76 @@ if (namesFile && existsSync(namesFile)) {
   if (explicit) {
     console.log(`loaded ${explicit} explicit archetype names\n`);
   } else {
-    // Raw page text: find "<name> ... <pop>%" pairs, tolerating line breaks.
+    // Raw page text: the archetype filter list appears after an "Archetypes"
+    // header and is ordered by current popularity â€” the same order the payload
+    // gives when sorted by latest popularity, so the two can be zipped by rank.
     const lines = txt.split(/\r?\n/).map((s) => s.trim()).filter(Boolean);
-    for (let i = 0; i < lines.length; i++) {
-      const pct = lines[i].match(/^(\d{1,2}\.\d{1,2})\s*%$/);
-      if (pct) {
-        // walk back to the nearest plausible deck name
-        for (let j = i - 1; j >= Math.max(0, i - 4); j--) {
-          const cand = lines[j];
-          if (/^[A-Z][A-Za-z0-9'’,\- ]{2,40}$/.test(cand) && !/^\d/.test(cand)) {
-            pageRows.push({ name: cand, pop: Number(pct[1]) });
-            break;
-          }
-        }
+    const start = lines.findIndex((l, i) => /^Archetypes$/i.test(l) && /^Colors$/i.test(lines[i + 1] ?? ""));
+    if (start !== -1) {
+      for (const l of lines.slice(start + 2)) {
+        if (!/^[A-Z0-9][A-Za-z0-9'â€™,\-\. ]{2,44}$/.test(l)) continue;
+        if (/%$/.test(l) || /^\d+$/.test(l)) continue;
+        pageRows.push(l);
       }
-      const inline = lines[i].match(/^(.{3,40}?)\s+(\d{1,2}\.\d{1,2})\s*%/);
-      if (inline && !pct) pageRows.push({ name: inline[1].trim(), pop: Number(inline[2]) });
     }
-    console.log(`scraped ${pageRows.length} name/popularity pairs from page text\n`);
+    console.log(`read ${pageRows.length} archetype names from page text (rank-ordered)\n`);
   }
 }
 
-/** Join scraped page names onto archetype ids by nearest popularity value. */
-function attachScrapedNames(rows) {
-  if (!pageRows.length) return 0;
-  const used = new Set();
-  let hits = 0;
-  for (const r of rows) {
-    // The site may show either the latest day or the window average — try both.
-    const candidates = [r.popularity_avg, r.popularity_latest].filter((x) => x != null);
-    if (!candidates.length) continue;
-    let best = null;
-    let bestDiff = Infinity;
-    for (const p of pageRows) {
-      if (used.has(p)) continue;
-      const diff = Math.min(...candidates.map((c) => Math.abs(p.pop - c)));
-      if (diff < bestDiff) {
-        bestDiff = diff;
-        best = p;
-      }
-    }
-    if (best && bestDiff <= 0.06) {
-      r.name = best.name;
-      used.add(best);
-      hits++;
+/** Colour words that appear in archetype names, and the letters they imply. */
+const NAME_COLORS = {
+  "mono-white": "W", "mono-blue": "U", "mono-black": "B", "mono-red": "R", "mono-green": "G",
+  azorius: "WU", dimir: "UB", rakdos: "BR", gruul: "RG", selesnya: "WG",
+  orzhov: "WB", izzet: "UR", golgari: "BG", boros: "WR", simic: "UG",
+  esper: "WUB", grixis: "UBR", jund: "BRG", naya: "WRG", bant: "WUG",
+  abzan: "WBG", temur: "URG", jeskai: "WUR", sultai: "UBG", mardu: "WBR",
+};
+/** Does a name's colour word agree with the decoded colour bits? */
+function colorAgrees(name, letters) {
+  const l = name.toLowerCase();
+  for (const [word, expect] of Object.entries(NAME_COLORS)) {
+    if (l.startsWith(word)) {
+      return [...expect].sort().join("") === [...letters].sort().join("");
     }
   }
-  return hits;
+  if (/^4-color/.test(l)) return letters.length === 4;
+  if (/^5-color/.test(l)) return letters.length === 5;
+  return null; // no colour word to check against
+}
+
+/**
+ * Match rank-ordered page names onto archetypes, using the independently
+ * decoded colour bits as a constraint. Both lists are popularity-ordered but
+ * cover different sets (the site lists more archetypes than the payload
+ * returns), so a positional zip drifts. Walking the page list in order and
+ * taking the most popular still-unclaimed archetype of the *same colours*
+ * survives insertions on either side, and refuses to guess when nothing fits.
+ */
+function attachScrapedNames(rows) {
+  if (!pageRows.length) return { named: 0, skipped: 0 };
+  const byLatest = [...rows].sort(
+    (a, b) => (b.popularity_latest ?? 0) - (a.popularity_latest ?? 0)
+  );
+  const claimed = new Set();
+  let named = 0;
+  let skipped = 0;
+
+  for (const name of pageRows) {
+    const target = colorAgrees(name, ""); // null when the name has no colour word
+    const cand = byLatest.find((r) => {
+      if (claimed.has(r)) return false;
+      const ok = colorAgrees(name, r.colors);
+      return ok === true;
+    });
+    if (cand) {
+      cand.name = name;
+      claimed.add(cand);
+      named++;
+    } else {
+      skipped++;
+    }
+  }
+  return { named, skipped };
 }
 
 const last = (a) => (Array.isArray(a) ? a.filter((x) => typeof x === "number").at(-1) : a);
@@ -155,10 +178,18 @@ for (const [id, group] of Object.entries(groups)) {
     tag_ids: tile.primary_tag_ids ?? [],
   });
 }
-rows.sort((a, b) => (b.popularity_avg ?? 0) - (a.popularity_avg ?? 0));
+// Sort by the value the site displays, so rank-order joins line up.
+rows.sort((a, b) => (b.popularity_latest ?? 0) - (a.popularity_latest ?? 0));
 
-const scraped = attachScrapedNames(rows);
-if (scraped) console.log(`matched ${scraped} archetype names by popularity\n`);
+const { named, skipped } = attachScrapedNames(rows);
+if (named || skipped) {
+  console.log(
+    `named ${named} archetypes (colour-verified); ${skipped} page entries had no colour-matching archetype in this payload\n`
+  );
+}
+
+// Matching is done; present by the more stable 35-day average.
+rows.sort((a, b) => (b.popularity_avg ?? 0) - (a.popularity_avg ?? 0));
 
 const totalMatches = (meta_data?.total_matches?.All ?? [])
   .flat()
@@ -171,7 +202,7 @@ console.log(`  window   : ${date_range[0]} .. ${date_range.at(-1)}  (${date_rang
 console.log(`  matches  : ${totalMatches.toLocaleString()} total across the window`);
 console.log(`  archetypes: ${rows.length}\n`);
 
-const named = rows.filter((r) => r.name).length;
+const namedCount = rows.filter((r) => r.name).length;
 console.log(
   `  ${"pop%".padStart(6)} ${"WR%".padStart(6)} ${"matches".padStart(9)}  ${"colors".padEnd(12)} archetype`
 );
@@ -183,9 +214,9 @@ for (const r of rows.slice(0, TOP)) {
   );
 }
 
-if (!named) {
+if (!namedCount) {
   console.log(
-    `\n  ⚠ No archetype names — this payload only carries numeric ids.\n` +
+    `\n  âš  No archetype names â€” this payload only carries numeric ids.\n` +
       `    Capture the rendered page text and pass --names, or map ids by hand.`
   );
 }
@@ -200,3 +231,4 @@ const out = {
 const outPath = join(DATA_DIR, "playrate.json");
 writeFileSync(outPath, JSON.stringify(out, null, 1));
 console.log(`\nwrote ${outPath}  (${rows.length} archetypes)`);
+
